@@ -1,0 +1,19 @@
+idx	original	no_punc_lower	correct_gold	no_punc_lower_permuted	permuted_gold
+0	D' Meedchen huet e Bréif un säi Frënd geschriwwen .	d' meedchen huet e bréif un säi frënd geschriwwen	O O C O O O O O C	d' meedchen huet e bréif un säi frënd geschriwwen	O O C O O O O O C
+1	Ech mengen et reent .	ech mengen et reent	O C O C	ech mengen et reent	O C O C
+2	Wëlls du goen ?	wëlls du goen	C O C	wëlls du goen	C O C
+3	Sam , maach d' Fënster op !	sam maach d' fënster op	O C O O O	sam maach d' fënster op	O C O O O
+4	Si huet hire Mann den Auto wäsche gedoen .	si huet hire mann den auto wäsche gedoen	O C O O C O O C	si huet hire mann gedoen den auto wäsche	O C O O C O O C
+5	Dem Peter säin Noper huet den Zonk rout ugestrach .	dem peter säin noper huet den zonk rout ugestrach	O O O O C O O O C	dem peter säin noper den zonk rout ugestrach huet	O O O O O O O F F
+6	Mäi Papp ass méi cool wéi däin .	mäi papp ass méi cool wéi däin	O O C O O O O	mäi papp méi ass cool wéi däin	O O O F O O O
+7	D' Mary huet Bronze gewonnen , de Peter Sëlwer an d' Jane Gold .	d' mary huet bronze gewonnen de peter sëlwer an d' jane gold	O O C O C O O O O O O O	d' mary bronze de peter gewonnen sëlwer an huet d' jane gold	O O O O O F O O F O O O
+8	Ass Iguazu e grousst oder e klengt Land ?	ass iguazu e grousst oder e klengt land	C O O O O O O O	iguazu e grousst oder e klengt ass land	O O O O O O F O
+9	Weeder de Peter Smith nach d' Mary Brown konnten ausgewielt ginn .	weeder de peter smith nach d' mary brown konnten ausgewielt ginn	O O O O O O O O C C C	weeder de peter konnten ginn ausgewielt smith nach d' mary brown	O O O F F F O O O O O
+10	Si hu keng Anung , wien et geschriwwen huet .	si hu keng anung wien et geschriwwen huet	O C O O O O C C	si hu keng anung wien et geschriwwen huet	O C O O O O C C
+11	Wat kucks du dir un ?	wat kucks du dir un	O C O O O	wat du kucks dir un	O O F O O
+12	Wéini mengs du , datt s du komme kanns ?	wéini mengs du datt s du komme kanns	O O O O C C C O	wéini kanns datt s komme du mengs du	O F O O C O C O
+13	Hien huet en Auto kaaft , awer säi Brudder just e Vëlo .	hien huet en auto kaaft awer säi brudder just e vëlo	O C O O C O O O O O O	hien en auto huet awer säi brudder just e vëlo kaaft	O O O F O O O O O O F
+14	De Peter an d' Mary hunn sech ëmaarmt an dunn de Raum verlooss .	de peter an d' mary hunn sech ëmaarmt an dunn de raum verlooss	O O O O O C O C O O O O C	de peter an d' mary ëmaarmt hunn sech an dunn de raum verlooss	O O O O O F F O O O O O C
+15	Si hätt sollen hir Hoer maachen , awer aus iergendengem Grond huet si et deen Dag net gemaach .	si hätt sollen hir hoer maachen awer aus iergendengem grond huet si et deen dag net gemaach	O C C O O C O O O O C O O O O O C	si maachen sollen hätt hir hoer awer aus iergendengem grond huet si et deen dag net gemaach	O F C F O O O O O O C O O O O O C
+16	Ech konnt net mathalen , well hien ze séier gelaf ass .	ech konnt net mathalen well hien ze séier gelaf ass	O C O C O O O O C C	ech net mathalen konnt well hien ze séier gelaf ass	O O F F O O O O C C
+17	Si ass zu Paräis , der Haaptstad vu Frankräich , opgewuess .	si ass zu paräis der haaptstad vu frankräich opgewuess	O C O O O O O O C	si ass zu paräis opgewuess der haaptstad vu frankräich	O C O O F O O O O
