@@ -64,5 +64,5 @@ om du vill  inte  behålla  dina  filterinställningar  kontrollerar   du att   
 O  O  F     O     C        O     O                    C              O  O     F        O        F  O           O     F        O     O  C        O        O     C     C
 ```
 
-## Dataset Distribution
+## Label Distribution
 The algorithm ensures that the distribution of correctly (`C`) and incorrectly (`F`) placed verbs in each dataset remains approximately equal.
