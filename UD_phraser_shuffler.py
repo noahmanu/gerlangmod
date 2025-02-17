@@ -376,14 +376,17 @@ class Shuffler:
         all_labels = []
         correct_counter = 0
         incorrect_counter = 0
+
         for i, positions_per_phrase_per_sent in enumerate(self.positions_pphr_ps):
             filled_phr_ps = []
             labels_ps = []
+
             for j, positions_pphr in enumerate(positions_per_phrase_per_sent):
                 position_copy = positions_pphr.copy()
                 possible_verb_positions = list(set(positions_pphr).difference(set(self.inv_positions_pphr_ps[i][j])))
                 last_position = position_copy[-1] + 1  # create a last dummy position
                 possible_verb_positions.extend([last_position])  # add a dummy position to make it possible for the verb to be placed behind all other tokens, otherwise with the insert method only second-to-last would be possible
+
                 for id, pos_tok in self.all_id_to_pos_tok_dicts_ps[i].items():
                     trial_counter = 0
                     if pos_tok[0] == 'V' and id in positions_pphr:
