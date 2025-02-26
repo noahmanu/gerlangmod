@@ -25,7 +25,8 @@ om du inte vill behålla dina filterinställningar kontrollerar du att knappen a
 **Step 1: Phrase Extraction**
 ```
 [om du inte vill behålla dina filterinställningar]
-[kontrollerar du att knappen autofilter inte är markerad]
+[kontrollerar du]
+[att knappen autofilter inte är markerad]
 [innan du börjar markera element]
 [som ska filtreras]
 ```
@@ -33,7 +34,8 @@ om du inte vill behålla dina filterinställningar kontrollerar du att knappen a
 **Step 2: Noun Phrase Protection**
 ```
 [om du inte vill behålla (dina filterinställningar)]
-[kontrollerar du att knappen autofilter inte är markerad]
+[kontrollerar du]
+[att knappen autofilter inte är markerad]
 [innan du börjar markera element]
 [som ska filtreras]
 ```
@@ -41,16 +43,18 @@ om du inte vill behålla dina filterinställningar kontrollerar du att knappen a
 **Step 3: Verb Reordering**
 ```
 [om du vill inte behålla (dina filterinställningar)]
-[kontrollerar du att markerad knappen är autofilter inte]
+[kontrollerar du]
+[att markerad knappen är autofilter inte]
 [börjar innan du markera element]
 [som ska filtreras]
 ```
 
 **Analysis of Changes:**
 1. *1st phrase:* `vill` is misplaced, `behålla` stays in its correct position.
-2. *2nd phrase:* Both `är` and `markerad` are misplaced, `kontrollerar` stays in its correct position.
-3. *3rd phrase:* `börjar` is misplaced, `markera` stays in its correct position.
-4. *4th phrase:* `ska` and `filtreras` remain correctly positioned.
+2. *2nd phrase:* `är` and `markerad` are misplaced.
+3. *3rd phrase:* `kontrollerar` stays in its correct position.
+4. *4th phrase:* `börjar` is misplaced, `markera` stays in its correct position.
+5. *5th phrase:* `ska` and `filtreras` stay in their correct positions.
 
 **Output Labeling**
 
