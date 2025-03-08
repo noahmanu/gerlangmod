@@ -6,7 +6,7 @@ Code repository for the Germanic Language Modeling paper to be written for Trust
 ## Overview
 This project implements an algorithm that introduces errors in verb placement within well-formed sentences from Universal Dependencies (UD) datasets. The core assumption is that these sentences are grammatically correct, and their UPOS and dependency annotations are accurate. The algorithm randomly reorders verb tokens within their respective phrases while preserving noun phrases, ensuring that the resulting sentences are ungrammatical.
 
-## Algorithm Details
+## Method
 For every sentence containing at least one verb token, the algorithm performs the following steps:
 
 1. **Phrase Extraction**: Identifies and aggregates full verb tokens and their dependent tokens into phrases.
