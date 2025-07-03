@@ -212,6 +212,7 @@ class Simple:
         self.df_data['random_gold'] = random_gold
 
     def save_data(self):
+        # TODO: Update this so it automatically splits no in nb and nn (for now, I manually created directories for holding these datasets)
         """
         Save the dataframe containing processed phrase data to a TSV file.
 

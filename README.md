@@ -1,10 +1,20 @@
-# gerlangmod
-Code repository for the Germanic Language Modeling paper to be written for TrustLLM WP7.
+# GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages
+
+This repository contains the code described in **Noah-Manuel Michael and Andrea Horbach (2025). GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages. In *Proceedings of the 20th Workshop on Building Educational Applications (BEA 2025)*. Association for Computational Linguistics.**
+
+Specifically, you will find the code to create the GermDetect datasets and train prototype mBERT models for verb placement error detection. It also contains the datasets (ver. 1.0 and ver. 1.1).
+In ver. 1.0, as explained in the Limitations section of the paper, we have identified a bug which—in sentences consisting of more than two verb-headed phrases—caused the order of the phrases to be restored incorrectly after introducing the verb placement errors. This bug has been fixed in ver. 1.1.
+We reran the dataset creation algorithm and the training of the models; a summary of the updated results can be found in `/results/f05_scores_v1_1.txt` and below this paragraph.
+The results stray only slightly from the original results reported in the paper, with differences in the range of **0.0001–0.0373 F0.5 points**.
+
+![Updated results.](results/results_v1_1.png)
 
 # Verb Order Error Dataset Creation Algorithm
 
 ## Overview
-This project implements an algorithm that introduces errors in verb placement within well-formed sentences from Universal Dependencies (UD) datasets. The core assumption is that these sentences are grammatically correct, and their UPOS and dependency annotations are accurate. The algorithm randomly reorders verb tokens within their respective phrases while preserving noun phrases, ensuring that the resulting sentences are ungrammatical.
+GermDetect employs an algorithm that introduces errors in verb placement within well-formed sentences from Universal Dependencies (UD) datasets. 
+The core assumption is that these sentences are grammatically correct, and their UPOS and dependency annotations are accurate. The algorithm 
+randomly reorders verb tokens within their respective phrases while leaving noun phrases intact, i.e., no verb can be placed within elements of a single noun phrase.
 
 ## Method
 For every sentence containing at least one verb token, the algorithm performs the following steps:
@@ -17,44 +27,32 @@ For every sentence containing at least one verb token, the algorithm performs th
 ## Example
 Consider the following input sentence (common punctuation is removed, and tokens are lowercased to eliminate contextual clues beyond word order):
 
-**Original Sentence:**
+**Original Sentence:** Dutch for "I know that he has bought a dog."
 ```
-om du inte vill behålla dina filterinställningar kontrollerar du att knappen autofilter inte är markerad innan du börjar markera element som ska filtreras
-```
-
-**Step 1: Phrase Extraction**
-```
-[om du inte vill behålla dina filterinställningar]
-[kontrollerar du]
-[att knappen autofilter inte är markerad]
-[innan du börjar markera element]
-[som ska filtreras]
+ik weet dat hij een hond heeft gekocht
 ```
 
-**Step 2: Noun Phrase Protection**
+**Step 1: Extraction of Verb-Headed Phrases**
 ```
-[om du inte vill behålla (dina filterinställningar)]
-[kontrollerar du]
-[att knappen autofilter inte är markerad]
-[innan du börjar markera element]
-[som ska filtreras]
+[ik weet]
+[dat hij een hond heeft gekocht]
+```
+
+**Step 2: Extraction of Noun-Headed Phrases and Impermeabilization Thereof**
+```
+[ik weet]
+[dat hij (een hond) heeft gekocht]
 ```
 
 **Step 3: Verb Reordering**
 ```
-[om du vill inte behålla (dina filterinställningar)]
-[kontrollerar du]
-[att markerad knappen är autofilter inte]
-[börjar innan du markera element]
-[som ska filtreras]
+[ik weet]
+[dat gekocht hij heeft (een hond)]
 ```
 
 **Analysis of Changes:**
-1. *1st phrase:* `vill` is misplaced, `behålla` stays in its correct position.
-2. *2nd phrase:* `är` and `markerad` are misplaced.
-3. *3rd phrase:* `kontrollerar` stays in its correct position.
-4. *4th phrase:* `börjar` is misplaced, `markera` stays in its correct position.
-5. *5th phrase:* `ska` and `filtreras` stay in their correct positions.
+1. *1st phrase:* `weet` stays in its original position because the only possible permutation of the phrase would result in correct polar question syntax (`weet ik`).
+2. *2nd phrase:* `heeft` and `gekocht` are misplaced.
 
 **Output Labeling**
 
@@ -64,9 +62,49 @@ The algorithm labels tokens as follows:
 - `F` (False) - Incorrectly placed verb tokens
 
 ```
-om du vill  inte  behålla  dina  filterinställningar  kontrollerar   du att   markerad knappen  är autofilter  inte  börjar   innan du markera  element  som   ska   filtreras
-O  O  F     O     C        O     O                    C              O  O     F        O        F  O           O     F        O     O  C        O        O     C     C
+ik  weet    dat gekocht hij heeft   een hond
+O   C       O   F       O   F       O   O
 ```
 
 ## Label Distribution
 The algorithm ensures that the distribution of correctly (`C`) and incorrectly (`F`) placed verbs in each dataset remains approximately equal.
+
+# Technical Instructions
+
+We do not include the UD datasets in this repository, as they are available under the CC BY 4.0 license and can be downloaded from the Universal Dependencies website.
+A list of the UD datasets used to create the GermDetect datasets can be found in `/dataset_statistics/language_list.txt`.
+In order to recreate the GermDetect datasets, you will need to download the UD datasets and place them in `/gerlangmod/Germanic UD`.
+The followings instructions assume a MacOS or Linux environment.
+
+First, navigate to the root directory of this repository:
+```
+cd gerlangmod
+```
+
+Install the required Python packages in your environment by running the following command:
+```
+pip install -r requirements.txt
+```
+
+Then, to execute the main script that creates the GermDetect datasets and trains the mBERT models, run:
+```
+python3 main.py
+```
+
+This will create the GermDetect datasets in the 'verb_error_datasets_v1_1' directory.
+It will also create the naive baselines datasets in the 'verb_error_datasets_naive' directory.
+
+Finally, the script will train all configurations of the mBERT models on the GermDetect datasets described in the paper and save the resulting models in the 'models_v1_1' directory.
+
+To get predictions on the test sets, run:
+```
+python3 inference_v1_1.py
+```
+
+To calculate the F0.5 scores of the predictions, run:
+```
+python3 eval.py
+```
+
+This will write the F0.5 scores to the file `results/f05_scores_v1_1.txt`.
+

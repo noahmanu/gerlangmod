@@ -1,0 +1,102 @@
+Language: sv, Dataset: lines, Split: dev.tsv, Total number of sentences: 989
+Counter({'O': 13327, 'C': 1562, 'F': 1559})
+Language: sv, Dataset: talbanken, Split: test.tsv, Total number of sentences: 1140
+Counter({'O': 14798, 'C': 1573, 'F': 1571})
+Language: sv, Dataset: talbanken, Split: train.tsv, Total number of sentences: 3909
+Counter({'O': 47995, 'C': 4769, 'F': 4768})
+Language: sv, Dataset: talbanken, Split: dev.tsv, Total number of sentences: 478
+Counter({'O': 7263, 'C': 709, 'F': 708})
+Language: sv, Dataset: pud, Split: test.tsv, Total number of sentences: 992
+Counter({'O': 14502, 'C': 1343, 'F': 1341})
+Language: sv, Dataset: lines, Split: train.tsv, Total number of sentences: 3008
+Counter({'O': 39408, 'C': 4672, 'F': 4669})
+Language: sv, Dataset: lines, Split: test.tsv, Total number of sentences: 969
+Counter({'O': 11969, 'C': 1438, 'F': 1437})
+Language: da, Dataset: ddt, Split: test.tsv, Total number of sentences: 532
+Counter({'O': 6870, 'C': 803, 'F': 803})
+Language: da, Dataset: ddt, Split: train.tsv, Total number of sentences: 3989
+Counter({'O': 55403, 'F': 6188, 'C': 6186})
+Language: da, Dataset: ddt, Split: dev.tsv, Total number of sentences: 518
+Counter({'O': 7167, 'C': 825, 'F': 823})
+Language: no, Dataset: bokmaal, Split: test.tsv, Total number of sentences: 1810
+Counter({'O': 21095, 'C': 2526, 'F': 2526})
+Language: no, Dataset: bokmaal, Split: dev.tsv, Total number of sentences: 2178
+Counter({'O': 25653, 'C': 2966, 'F': 2966})
+Language: no, Dataset: nynorsk, Split: test.tsv, Total number of sentences: 1377
+Counter({'O': 18115, 'C': 1858, 'F': 1858})
+Language: no, Dataset: nynorsk, Split: train.tsv, Total number of sentences: 12718
+Counter({'O': 177112, 'C': 18464, 'F': 18461})
+Language: no, Dataset: bokmaal, Split: train.tsv, Total number of sentences: 14120
+Counter({'O': 171489, 'C': 19775, 'F': 19773})
+Language: no, Dataset: nynorsk, Split: dev.tsv, Total number of sentences: 1685
+Counter({'O': 22475, 'C': 2429, 'F': 2425})
+Language: qfn, Dataset: fame, Split: test.tsv, Total number of sentences: 324
+Counter({'O': 2628, 'C': 284, 'F': 278})
+Language: lb, Dataset: luxbank, Split: test.tsv, Total number of sentences: 18
+Counter({'O': 115, 'C': 22, 'F': 20})
+Language: is, Dataset: icepahc, Split: train.tsv, Total number of sentences: 32505
+Counter({'O': 475106, 'C': 62068, 'F': 62066})
+Language: is, Dataset: gc, Split: train.tsv, Total number of sentences: 3908
+Counter({'O': 58746, 'C': 6707, 'F': 6706})
+Language: is, Dataset: pud, Split: test.tsv, Total number of sentences: 995
+Counter({'O': 14091, 'C': 1484, 'F': 1481})
+Language: is, Dataset: icepahc, Split: dev.tsv, Total number of sentences: 4579
+Counter({'O': 94062, 'C': 12379, 'F': 12375})
+Language: is, Dataset: icepahc, Split: test.tsv, Total number of sentences: 4965
+Counter({'O': 95484, 'F': 11983, 'C': 11982})
+Language: is, Dataset: gc, Split: test.tsv, Total number of sentences: 529
+Counter({'O': 7755, 'F': 861, 'C': 860})
+Language: is, Dataset: modern, Split: test.tsv, Total number of sentences: 432
+Counter({'O': 7620, 'C': 883, 'F': 882})
+Language: is, Dataset: modern, Split: dev.tsv, Total number of sentences: 383
+Counter({'O': 6141, 'F': 746, 'C': 745})
+Language: is, Dataset: modern, Split: train.tsv, Total number of sentences: 2659
+Counter({'O': 45435, 'C': 5660, 'F': 5660})
+Language: is, Dataset: gc, Split: dev.tsv, Total number of sentences: 495
+Counter({'O': 7972, 'C': 941, 'F': 938})
+Language: gsw, Dataset: uzh, Split: test.tsv, Total number of sentences: 99
+Counter({'O': 978, 'C': 141, 'F': 139})
+Language: nl, Dataset: alpino, Split: test.tsv, Total number of sentences: 557
+Counter({'O': 7947, 'C': 827, 'F': 827})
+Language: nl, Dataset: lassysmall, Split: train.tsv, Total number of sentences: 10389
+Counter({'O': 167415, 'C': 14063, 'F': 14060})
+Language: nl, Dataset: lassysmall, Split: dev.tsv, Total number of sentences: 1252
+Counter({'O': 19352, 'C': 1790, 'F': 1788})
+Language: nl, Dataset: alpino, Split: train.tsv, Total number of sentences: 11604
+Counter({'O': 132951, 'C': 14167, 'F': 14165})
+Language: nl, Dataset: lassysmall, Split: test.tsv, Total number of sentences: 1272
+Counter({'O': 19241, 'C': 1719, 'F': 1718})
+Language: nl, Dataset: alpino, Split: dev.tsv, Total number of sentences: 697
+Counter({'O': 8536, 'C': 777, 'F': 775})
+Language: af, Dataset: afribooms, Split: train.tsv, Total number of sentences: 1300
+Counter({'O': 25341, 'C': 2617, 'F': 2615})
+Language: af, Dataset: afribooms, Split: test.tsv, Total number of sentences: 425
+Counter({'O': 7637, 'C': 776, 'F': 776})
+Language: af, Dataset: afribooms, Split: dev.tsv, Total number of sentences: 192
+Counter({'O': 3966, 'C': 404, 'F': 402})
+Language: de, Dataset: gsd, Split: train.tsv, Total number of sentences: 9710
+Counter({'O': 129050, 'C': 9728, 'F': 9726})
+Language: de, Dataset: hdt, Split: train.tsv, Total number of sentences: 104322
+Counter({'O': 1391353, 'C': 120674, 'F': 120674})
+Language: de, Dataset: gsd, Split: dev.tsv, Total number of sentences: 613
+Counter({'O': 6730, 'C': 697, 'F': 694})
+Language: de, Dataset: gsd, Split: test.tsv, Total number of sentences: 648
+Counter({'O': 7740, 'C': 737, 'F': 737})
+Language: de, Dataset: hdt, Split: test.tsv, Total number of sentences: 12758
+Counter({'O': 167172, 'C': 14497, 'F': 14497})
+Language: de, Dataset: hdt, Split: dev.tsv, Total number of sentences: 12234
+Counter({'O': 159956, 'C': 14105, 'F': 14104})
+Language: de, Dataset: pud, Split: test.tsv, Total number of sentences: 738
+Counter({'O': 10864, 'C': 1053, 'F': 1052})
+Language: de, Dataset: lit, Split: test.tsv, Total number of sentences: 1784
+Counter({'O': 27315, 'C': 2657, 'F': 2656})
+Language: fo, Dataset: oft, Split: test.tsv, Total number of sentences: 1203
+Counter({'O': 6869, 'C': 770, 'F': 770})
+Language: fo, Dataset: farpahc, Split: train.tsv, Total number of sentences: 1015
+Counter({'O': 13993, 'C': 2284, 'F': 2283})
+Language: fo, Dataset: farpahc, Split: test.tsv, Total number of sentences: 299
+Counter({'O': 5845, 'C': 760, 'F': 760})
+Language: fo, Dataset: farpahc, Split: dev.tsv, Total number of sentences: 292
+Counter({'O': 5676, 'C': 728, 'F': 726})
+Total_sents: 275607
+Counter({'O': 3795723, 'C': 381884, 'F': 381816})

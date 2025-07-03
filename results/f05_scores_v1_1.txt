@@ -1,0 +1,93 @@
+af
+  target               F0.5 = 0.8031
+  all                  F0.5 = 0.8790
+  all-balanced         F0.5 = 0.8432
+  west                 F0.5 = 0.8718
+  west-balanced        F0.5 = 0.8263
+  random               F0.5 = 0.7345
+  adjacent             F0.5 = 0.7112
+
+de
+  target               F0.5 = 0.9347
+  all                  F0.5 = 0.9306
+  all-balanced         F0.5 = 0.9311
+  west                 F0.5 = 0.9356
+  west-balanced        F0.5 = 0.9292
+  random               F0.5 = 0.8001
+  adjacent             F0.5 = 0.6655
+
+nl
+  target               F0.5 = 0.8728
+  all                  F0.5 = 0.8779
+  all-balanced         F0.5 = 0.8827
+  west                 F0.5 = 0.8823
+  west-balanced        F0.5 = 0.8691
+  random               F0.5 = 0.7334
+  adjacent             F0.5 = 0.6953
+
+fo
+  target               F0.5 = 0.7116
+  all                  F0.5 = 0.8331
+  all-balanced         F0.5 = 0.8037
+  north                F0.5 = 0.8283
+  north-balanced       F0.5 = 0.7789
+  island               F0.5 = 0.8257
+  island-balanced      F0.5 = 0.7126
+  random               F0.5 = 0.6311
+  adjacent             F0.5 = 0.6812
+
+is
+  target               F0.5 = 0.8270
+  all                  F0.5 = 0.8256
+  all-balanced         F0.5 = 0.8345
+  north                F0.5 = 0.8323
+  north-balanced       F0.5 = 0.8344
+  island               F0.5 = 0.8268
+  island-balanced      F0.5 = 0.8281
+  random               F0.5 = 0.7448
+  adjacent             F0.5 = 0.6414
+
+da
+  target               F0.5 = 0.8436
+  all                  F0.5 = 0.8730
+  all-balanced         F0.5 = 0.8790
+  north                F0.5 = 0.8684
+  north-balanced       F0.5 = 0.8687
+  mainland             F0.5 = 0.8679
+  mainland-balanced    F0.5 = 0.8683
+  random               F0.5 = 0.7529
+  adjacent             F0.5 = 0.7421
+
+nb
+  target               F0.5 = 0.9000
+  all                  F0.5 = 0.9104
+  all-balanced         F0.5 = 0.9178
+  north                F0.5 = 0.9142
+  north-balanced       F0.5 = 0.9097
+  mainland             F0.5 = 0.9196
+  mainland-balanced    F0.5 = 0.9167
+  random               F0.5 = 0.8005
+  adjacent             F0.5 = 0.7496
+
+nn
+  target               F0.5 = 0.8984
+  all                  F0.5 = 0.9043
+  all-balanced         F0.5 = 0.9120
+  north                F0.5 = 0.9067
+  north-balanced       F0.5 = 0.9096
+  mainland             F0.5 = 0.9044
+  mainland-balanced    F0.5 = 0.9046
+  random               F0.5 = 0.8014
+  adjacent             F0.5 = 0.7647
+
+sv
+  target               F0.5 = 0.8479
+  all                  F0.5 = 0.8974
+  all-balanced         F0.5 = 0.8894
+  north                F0.5 = 0.8934
+  north-balanced       F0.5 = 0.8860
+  mainland             F0.5 = 0.8897
+  mainland-balanced    F0.5 = 0.8826
+  random               F0.5 = 0.7757
+  adjacent             F0.5 = 0.7471
+
