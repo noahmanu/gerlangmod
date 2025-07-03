@@ -3,7 +3,7 @@
 This repository contains the code described in **Noah-Manuel Michael and Andrea Horbach (2025). GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages. In *Proceedings of the 20th Workshop on Building Educational Applications (BEA 2025)*. Association for Computational Linguistics.**
 
 Specifically, you will find the code to create the GermDetect datasets and train prototype mBERT models for verb placement error detection. It also contains the datasets (ver. 1.0 and ver. 1.1).
-In ver. 1.0, as explained in the Limitations section of the paper, we have identified a bug which—in sentences consisting of more than two verb-headed phrases—caused the order of the phrases to be restored incorrectly after introducing the verb placement errors. This bug has been fixed in ver. 1.1.
+In ver. 1.0, as explained in the Limitations section of the paper, we have identified a bug which — in sentences consisting of more than two verb-headed phrases — caused the order of the phrases to be restored incorrectly after introducing the verb placement errors. This bug has been fixed in ver. 1.1.
 We reran the dataset creation algorithm and the training of the models; a summary of the updated results can be found in `/results/f05_scores_v1_1.txt` and below this paragraph.
 The results stray only slightly from the original results reported in the paper, with differences in the range of **0.0001–0.0373 F0.5 points**.
 
@@ -73,7 +73,7 @@ The algorithm ensures that the distribution of correctly (`C`) and incorrectly (
 
 We do not include the UD datasets in this repository, as they are available under the CC BY 4.0 license and can be downloaded from the Universal Dependencies website.
 A list of the UD datasets used to create the GermDetect datasets can be found in `/dataset_statistics/language_list.txt`.
-In order to recreate the GermDetect datasets, you will need to download the UD datasets and place them in `/gerlangmod/Germanic UD`.
+In order to recreate the GermDetect datasets, you will need to download the UD datasets and place them in `/gerlangmod/Germanic UD/`.
 The followings instructions assume a MacOS or Linux environment.
 
 First, navigate to the root directory of this repository:
