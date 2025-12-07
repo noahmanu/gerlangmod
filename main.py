@@ -5,10 +5,10 @@
 
 import os
 import random
-from UD_phraser_shuffler_v1_1 import Phraser, Shuffler
-from UD_simple import Simple
-from dataloading_utils import load_relevant_train_datasets
-from finetune_v1_1 import train_model
+from Datasets.UD_phraser_shuffler_v1_1 import Phraser, Shuffler
+from Datasets.UD_simple import Simple
+from Experiments.dataloading_utils import load_relevant_train_datasets
+from Experiments.finetune_v1_1 import train_model
 
 
 if __name__ == '__main__':

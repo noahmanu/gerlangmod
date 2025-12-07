@@ -241,7 +241,7 @@ class Simple:
         identifier = extract_language_id(self.file)
 
         if identifier.split("_")[0] not in os.listdir('verb_error_datasets_naive'):
-            os.mkdir(f'verb_error_datasets_naive/{identifier.split("_")[0]}')
+            os.mkdir(f'Datasets/verb_error_datasets_naive/{identifier.split("_")[0]}')
 
         self.df_data.to_csv(
             f'verb_error_datasets_naive/{identifier.split("_")[0]}/{identifier}_{split}_naive.tsv',

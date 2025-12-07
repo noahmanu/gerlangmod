@@ -12,7 +12,7 @@ from transformers import BertForTokenClassification, BertTokenizerFast
 
 # Check and prepare predictions_v1_1 directory
 PRED_DIR = "predictions_v1_1"
-SRC_DIR = "verb_error_datasets_v1_1"
+SRC_DIR = "../Datasets/verb_error_datasets_v1_1"
 
 if not os.path.exists(PRED_DIR):
     os.makedirs(PRED_DIR)
@@ -46,10 +46,11 @@ device = torch.device("mps") if torch.backends.mps.is_available() else torch.dev
 # Load model from the latest checkpoint
 for language in os.listdir('models_v1_1'):
     if language != 'all_langs':
-        for configuration in os.listdir(f'models_v1_1/{language}'):
-            for checkpoint in os.listdir(f'models_v1_1/{language}/{configuration}'):
+        for configuration in os.listdir(f'Experiments/models_v1_1/{language}'):
+            for checkpoint in os.listdir(f'Experiments/models_v1_1/{language}/{configuration}'):
 
-                model = BertForTokenClassification.from_pretrained(f"models_v1_1/{language}/{configuration}/{checkpoint}")
+                model = BertForTokenClassification.from_pretrained(
+                    f"Experiments/models_v1_1/{language}/{configuration}/{checkpoint}")
                 tokenizer = BertTokenizerFast.from_pretrained("bert-base-multilingual-cased")
                 max_len = tokenizer.model_max_length  # usually 512 for BERT
 
