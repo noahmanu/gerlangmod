@@ -1,6 +1,6 @@
 # GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages
 
-This repository contains the code described in **Noah-Manuel Michael and Andrea Horbach (2025). GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages. In *Proceedings of the 20th Workshop on Building Educational Applications (BEA 2025)*. Association for Computational Linguistics.**
+This repository contains the code described in [**Noah-Manuel Michael and Andrea Horbach (2025). GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages. In *Proceedings of the 20th Workshop on Building Educational Applications (BEA 2025)*. Association for Computational Linguistics.**](https://aclanthology.org/2025.bea-1.59/)
 
 Specifically, you will find the code to create the GermDetect datasets and train prototype mBERT models for verb placement error detection. It also contains the datasets (ver. 1.0 and ver. 1.1).
 In ver. 1.0, as explained in the Limitations section of the paper, we have identified a bug which — in sentences consisting of more than two verb-headed phrases — caused the order of the phrases to be restored incorrectly after introducing the verb placement errors. This bug has been fixed in ver. 1.1.
@@ -106,3 +106,31 @@ O   C       O   F       O   F       O   O
 ## Label Distribution
 The algorithm ensures that the distribution of correctly (`C`) and incorrectly (`F`) placed verbs in each dataset remains approximately equal.
 
+## Bibtex Citation
+
+If you use GermDetect in your research, please cite the following paper:
+
+```bibtex
+@inproceedings{michael-horbach-2025-germdetect,
+    title = "{G}erm{D}etect: Verb Placement Error Detection Datasets for Learners of {G}ermanic Languages",
+    author = "Michael, Noah-Manuel  and
+      Horbach, Andrea",
+    editor = {Kochmar, Ekaterina  and
+      Alhafni, Bashar  and
+      Bexte, Marie  and
+      Burstein, Jill  and
+      Horbach, Andrea  and
+      Laarmann-Quante, Ronja  and
+      Tack, Ana{\"i}s  and
+      Yaneva, Victoria  and
+      Yuan, Zheng},
+    booktitle = "Proceedings of the 20th Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2025)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.bea-1.59/",
+    doi = "10.18653/v1/2025.bea-1.59",
+    pages = "818--829",
+    ISBN = "979-8-89176-270-1",
+}
