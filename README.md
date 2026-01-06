@@ -2,6 +2,8 @@
 
 This repository contains the code described in [Noah-Manuel Michael and Andrea Horbach (2025). GermDetect: Verb Placement Error Detection Datasets for Learners of Germanic Languages. In *Proceedings of the 20th Workshop on Building Educational Applications (BEA 2025)*. Association for Computational Linguistics.](https://aclanthology.org/2025.bea-1.59/)
 
+## Updated Results (ver. 1.1)
+
 Specifically, you will find the code to create the GermDetect datasets and train prototype mBERT models for verb placement error detection. It also contains the datasets (ver. 1.0 and ver. 1.1).
 In ver. 1.0, as explained in the Limitations section of the paper, we have identified a bug which — in sentences consisting of more than two verb-headed phrases — caused the order of the phrases to be restored incorrectly after introducing the verb placement errors. This bug has been fixed in ver. 1.1.
 We reran the dataset creation algorithm and the training of the models; a summary of the updated results can be found in `Experiments/results/f05_scores_v1_1.txt` and below this paragraph.
@@ -106,7 +108,7 @@ O   C       O   F       O   F       O   O
 ## Label Distribution
 The algorithm ensures that the distribution of correctly (`C`) and incorrectly (`F`) placed verbs in each dataset remains approximately equal.
 
-## Bibtex Citation
+# Bibtex Citation
 
 If you use GermDetect in your research, please cite the following paper:
 
